@@ -1,0 +1,257 @@
+$sub-header: #1F3637;
+$font-color: #333333;
+$gutter: var(--bs-gutter-x) / 2;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color;
+}
+.sub-header {
+  background-color: $sub-header;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--bs-white);
+  a {
+    color: var(--bs-white);
+    text-decoration: none;
+  }
+  li {
+    margin: 0px 15px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+.tel {
+  color: #FFBC27;
+  font-weight: bold;
+}
+.header-navbar {
+  nav {
+    min-height: 90px;
+  }
+  .nav-item {
+    margin: 0px 15px;
+    .active {
+      font-weight: bold;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-brand {
+    min-height: 74px;
+    img {
+      max-height: 40px;
+    }
+  }
+}
+.list-nostyle {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.link-nostyle {
+  text-decoration: none;
+  color: initial;
+  &:hover {
+    color: initial;
+    text-decoration: underline;
+  }
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0rem);
+		opacity: 1;
+	}
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes slideIn {
+	0% {
+		-webkit-transform: transform;
+		-webkit-opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-webkit-opacity: 1;
+	}
+	0% {
+		-webkit-transform: translateY(1rem);
+		-webkit-opacity: 0;
+	}
+}
+@media (min-width: 992px) {
+	.animate {
+		animation-duration: 0.3s;
+		-webkit-animation-duration: 0.3s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	}
+}
+.slideIn {
+	-webkit-animation-name: slideIn;
+	animation-name: slideIn;
+}
+.dropdown-menu {
+  border-radius: 2px;
+  border: none;
+}
+
+#hero-area {
+  height: 410px;
+  width: 100%;
+  // background-image: url("../images/hero1.png");
+  // background-repeat:no-repeat;
+  // background-position: center center;
+  // background-size: cover;
+}
+.hero-text {
+  background: rgba(0,0,0,.5);
+  z-index: 99;
+  width: 35%;
+  min-width: 666px;
+  color: #fff;
+  padding: 30px 180px 30px 30px;
+  border-radius: 30px 0px 0px 30px;
+  h3 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 999;
+}
+
+#big-footer {
+  padding: 60px 0px;
+  color: #fff;
+  font-size: 14px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 10px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+#small-footer {
+  padding: 24px 0px;
+  font-size: 14px;
+  a {
+    color: $font-color;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 30px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.social-media {
+  a {
+    margin-right: 5px !important;
+  }
+}
+
+#course-catalogue {
+  padding: 50px 0px;
+  h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+.subcourse-wrapper {
+  z-index: 99;
+}
+.card-course {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.16);
+  .card-body {
+    padding: 22px 20px 20px;
+  }
+  .link-nostyle:hover {
+    text-decoration: none;
+  }
+}
+.submenu-course {
+  width: calc(100% - 24px);
+  border-radius: 5px;
+  top: 98%;
+  z-index: -9;
+  .card-body {
+    font-size: 12px;
+    background-color: var(--bs-primary);
+    padding: 16px 10px;
+    text-align: center;
+    border: none;
+    a {
+      color: #fff;
+      margin-bottom: 4px;
+    }
+  }
+}
+.btn-collapse {
+  .icon-toggle {
+    &::before {
+      content: "\f077";
+    }
+  }
+  &.collapsed .icon-toggle {
+    &::before {
+      content: "\f078";
+    }
+  }
+}
+.btn-collapse:not(.collapsed) {
+  color: var(--bs-primary);
+  font-weight: bold;
+}

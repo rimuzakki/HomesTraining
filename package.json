@@ -1,0 +1,23 @@
+{
+  "name": "homestraining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf scss",
+    "prefix": "postcss assets/css/style.css --use=autoprefixer --map=false --output=assets/css/style.css",
+    "scss": "node-sass assets/scss -o assets/css",
+    "dev": "npm run scss -- --watch",
+    "build": "npm run clean && npm run scss && npm run prefix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "clean-css-cli": "^5.3.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1"
+  }
+}

@@ -1,0 +1,300 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!--====== Title ======-->
+	<title>Homes Training</title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--====== Style CSS ======-->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <header class="header-navbar">
+    <div class="sub-header d-flex align-items-center">
+      <div class="container">
+        <ul class="d-flex list-nostyle justify-content-end">
+          <li>
+            Call us now
+            <span class="tel">1800 333 888</span>
+          </li>
+          <li>
+            <a href="#">Language</a>
+          </li>
+          <li>
+            <a href="#">
+              Student/Trainer Portal
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img id="logo" src="assets/images/logo.svg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="nav" class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Course
+              </a>
+              <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Certificate of registration</a></li>
+                <li><a class="dropdown-item" href="#">Licensing course</a></li>
+                <li><a class="dropdown-item" href="#">Diploma in property services</a></li>
+                <li><a class="dropdown-item" href="#">Continuing professional development courses</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div> <!-- navbar collapse -->
+      </div> <!-- container -->
+    </nav> <!-- navbar -->
+  </header>
+
+  <section id="hero-area">
+    <div class="swiper-container mySwiper position-relative d-flex align-items-center">
+      <div class="hero-text position-absolute end-0">
+        <h3>
+          Course Delivery Method
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere ante sit amet mollis posuere. 
+          Maecenas tristique tortor fermentum, cursus erat non, bibendum nulla. Nulla facilisi. Nam eget luctus justo, sed molestie eros. 
+          Aenean non lobortis nisi, vitae viverra dolor. Proin tristique est massa, non cursus elit feugiat id. 
+          Curabitur vel nisi id justo rhoncus efficitur.
+        </p>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/hero1.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/hero2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/hero3.png" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="course-catalogue">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Course Catalogue</h3>
+        </div>
+      </div>
+      <div class="row" id="parent-submenu">
+
+        <div class="col position-relative subcourse-wrapper">
+          <div class="card card-course">
+            <img src="assets/images/nsw-course.png" class="card-img-top" alt="NSW Course">
+            <div class="card-body">
+              <a class="link-nostyle d-flex justify-content-between align-items-center btn-collapse collapsed" data-bs-toggle="collapse" href="#collapseNsw" role="button" aria-expanded="false" aria-controls="collapseNsw">
+                NSW Course
+                <i class="fas fa-chevron-down icon-toggle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="collapse position-absolute submenu-course" id="collapseNsw" data-bs-parent="#parent-submenu">
+            <div class="card card-body">
+              <a href="#" class="link-nostyle">NSW License Course</a> 
+              <a href="#" class="link-nostyle">NSW Certificate of Registration</a> 
+              <a href="#" class="link-nostyle">NSW Diploma Course</a>
+              <a href="#" class="link-nostyle">NSW CPD Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col position-relative subcourse-wrapper">
+          <div class="card card-course">
+            <img src="assets/images/qld-course.png" class="card-img-top" alt="QLD Course">
+            <div class="card-body">
+              <a class="link-nostyle d-flex justify-content-between align-items-center btn-collapse collapsed" data-bs-toggle="collapse" href="#collapseQld" role="button" aria-expanded="false" aria-controls="collapseQld">
+                QLD Course
+                <i class="fas fa-chevron-down icon-toggle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="collapse position-absolute submenu-course" id="collapseQld" data-bs-parent="#parent-submenu">
+            <div class="card card-body">
+              <a href="#" class="link-nostyle">QLD License Course</a> 
+              <a href="#" class="link-nostyle">QLD Certificate of Registration</a> 
+              <a href="#" class="link-nostyle">QLD Diploma Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col position-relative subcourse-wrapper">
+          <div class="card card-course">
+            <img src="assets/images/vic-course.png" class="card-img-top" alt="VIC Course">
+            <div class="card-body">
+              <a class="link-nostyle d-flex justify-content-between align-items-center btn-collapse collapsed" data-bs-toggle="collapse" href="#collapseVic" role="button" aria-expanded="false" aria-controls="collapseVic">
+                VIC Course
+                <i class="fas fa-chevron-down icon-toggle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="collapse position-absolute submenu-course" id="collapseVic" data-bs-parent="#parent-submenu">
+            <div class="card card-body">
+              <a href="#" class="link-nostyle">VIC License Course</a> 
+              <a href="#" class="link-nostyle">VIC Certificate of Registration</a> 
+              <a href="#" class="link-nostyle">VIC Diploma Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col position-relative subcourse-wrapper">
+          <div class="card card-course">
+            <img src="assets/images/act-course.png" class="card-img-top" alt="ACT Course">
+            <div class="card-body">
+              <a class="link-nostyle d-flex justify-content-between align-items-center btn-collapse collapsed" data-bs-toggle="collapse" href="#collapseAct" role="button" aria-expanded="false" aria-controls="collapseAct">
+                ACT Course
+                <i class="fas fa-chevron-down icon-toggle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="collapse position-absolute submenu-course" id="collapseAct" data-bs-parent="#parent-submenu">
+            <div class="card card-body">
+              <a href="#" class="link-nostyle">ACT License Course</a> 
+              <a href="#" class="link-nostyle">ACT Certificate of Registration</a> 
+              <a href="#" class="link-nostyle">ACT Diploma Course</a>
+              <a href="#" class="link-nostyle">ACT CPD Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col position-relative subcourse-wrapper">
+          <div class="card card-course">
+            <img src="assets/images/act-course.png" class="card-img-top" alt="Other Course">
+            <div class="card-body">
+              <a class="link-nostyle d-flex justify-content-between align-items-center btn-collapse collapsed" data-bs-toggle="collapse" href="#collapseOther" role="button" aria-expanded="false" aria-controls="collapseOther">
+                Other State Course
+                <i class="fas fa-chevron-down icon-toggle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="collapse position-absolute submenu-course" id="collapseOther" data-bs-parent="#parent-submenu">
+            <div class="card card-body">
+              <a href="#" class="link-nostyle">Other License Course</a> 
+              <a href="#" class="link-nostyle">Other Certificate of Registration</a> 
+              <a href="#" class="link-nostyle">Other Diploma Course</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section id="big-footer" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="logo" class="logo-footer" src="assets/images/logo.svg" alt="Logo">
+          </div>
+          <div class="col-md-6">
+            <div class="link-box d-flex flex-column">
+              <a href="#">Course Delivery Method</a>
+              <a href="#">Course Catalogue</a>
+              <a href="#">Course Calendar</a>
+              <a href="#">Certificate of registration</a>
+              <a href="#">Licensing course</a>
+              <a href="#">Diploma in Property Services</a>
+              <a href="#">Continuing Professional Development courses (CPD)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="small-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="d-flex">
+              <a href="#">Advertise with us</a>
+              <a href="#">Agent admin</a>
+              <a href="#">Media sales</a>
+              <a href="#">Legal</a>
+              <a href="#">Privacy</a>
+              <a href="#">Sitemap</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="d-flex social-media">
+              <a href="#">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="#">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="#">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="#">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!--====== Bootstrap js ======-->
+	<script src="assets/js/bootsrap/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
