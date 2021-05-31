@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf scss",
-    "prefix": "postcss assets/css/style.css --use=autoprefixer --map=false --output=assets/css/style.css",
-    "scss": "node-sass assets/scss -o assets/css",
+    "prefix": "postcss assets/css/style.css -o assets/css/style.css --use=autoprefixer --map=false",
+    "scss": "node-sass assets/scss -o assets/css --output-style compressed",
     "dev": "npm run scss -- --watch",
     "build": "npm run clean && npm run scss && npm run prefix"
   },
